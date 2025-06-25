@@ -1,0 +1,107 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /*background: linear-gradient(to right, #141e30, #243b55); /* Gradient background  */
+
+    background-image: url('images/tes1.jpeg');
+    background-size: cover; /* Makes the image cover the whole page */
+    background-position: center center; /* Centers the image */
+    background-attachment: fixed; /* Keeps the image fixed while scrolling */
+    height: 100vh; /* Makes sure the body takes up the full height of the viewport */
+    margin: 0; /* Removes any default margin */
+
+    color: white;
+    font-family: 'Montserrat', 'Robotto', 'Ariel';
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Catchphrase styling */
+.catchPhrase {
+    color: #ffffff;
+    font-size: 5em; /* Larger font */
+    font-weight: bold;
+    margin-top: 0vh; /* Reduced top margin */
+}
+
+.line1, .line2 {
+    display: inline;
+}
+
+/* Reason text styling */
+.reason {
+    font-size: 2em; /* Larger font */
+    margin: 20px 0 40px; /* Reduced bottom margin */
+    color: #ffffff;
+}
+
+/* Search container styling */
+.searchContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; /* Reduced top margin */
+}
+
+#searchBox {
+    width: 100%;
+    max-width: 600px;
+    height: 80px;
+    font-size: 2em;
+    color: #6a6d78;
+    background-color: #1a1a1a;
+    border-radius: 40px;
+    padding-left: 20px;
+    border: 2px solid #4d4d4d;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+#searchBox:focus {
+    outline: none;
+    border-color: #3a9ad9; /* Soft blue focus color */
+    box-shadow: 0 0 10px #3a9ad9;
+}
+
+/* Hover effect */
+#searchBox:hover {
+    border-color: #3a9ad9; /* Soft blue hover color */
+}
+
+#searchBox::placeholder{
+    font-family: Montserrat;
+    font-size: 0.75em;
+    color: #CCCCCC
+}
+
+
+@media(max-width: 1060px){
+    .line, .line2{
+        display: block;
+    }
+}
+
+/* Adjust for smaller screens */
+@media (max-width: 600px) {
+    #searchBox {
+        height: 60px;
+        font-size: 1.6em;
+    }
+
+    .catchPhrase{
+        font-size: 3.5em;
+    }
+
+    .reason{
+        font-size: 1.4em;
+    }
+}

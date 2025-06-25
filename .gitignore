@@ -1,0 +1,8 @@
+.env
+request_log.txt
+logs.txt
+.venv
+node_modules/
+python scripts/__pycache__/
+*.pyc
+.vscode/

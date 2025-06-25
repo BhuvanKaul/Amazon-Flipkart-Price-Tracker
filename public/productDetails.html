@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details</title>
+    <link rel="stylesheet" href="productDetails_style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- Existing content -->
+        <div class="image_nav">
+            <img alt="Product Thumbnail" class="product_img">
+        </div>
+        <div class="content">
+            <div id="product_name"></div>
+            
+            <!-- Current Price and Notification Button -->
+            <div class="price-notification-container">
+                <span id="product_price"></span>
+                <button id="notification_button">Notify Me</button>
+            </div>
+        
+            <!-- Chart and Min/Max Prices -->
+            <canvas id="price_chart"></canvas>
+
+            <div class="min-max-prices">
+                <div id="min_price" class="price-info"></div>
+                <div id="max_price" class="price-info"></div>
+            </div>
+        
+            <table id="specifications">
+                <tbody></tbody> <!-- Table body for JS to populate -->
+            </table>
+        </div>
+    </div>  
+
+    <!-- PopUp Modal in HTML -->
+    <div class="popUp" id="popUp">
+        <div class="popUp-content">
+            <span class="close">&times;</span>
+            <h2>Set Notification</h2>
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Enter your email"><br><br>
+            <label for="alert_price">Alert Price:</label>
+            <input type="number" id="alert_price" placeholder="Enter alert price"><br><br>
+            <button id="submit_notification">Submit</button>
+        </div>
+    </div>
+
+    <div class="success-banner" id="successBanner">
+        Notification successfully set!
+    </div>
+
+    <script src="productDetails_script.js"></script>
+</body>
+</html>

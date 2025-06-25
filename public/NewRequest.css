@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to right, #141e30, #243b55); 
+    color: white;
+    font-family: Montserrat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.messageContainer{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(20, 30, 48, 0.85); /* Semi-transparent dark overlay */
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+.headerMessage {
+    font-size: 4em;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.confirmationMessage {
+    font-size: 2.5em;
+    color: #e0e0e0;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 600px) {
+    .headerMessage {
+        font-size: 2.5em;
+    }
+
+    .confirmationMessage {
+        font-size: 2em;
+    }
+}
